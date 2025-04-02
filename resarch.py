@@ -76,9 +76,9 @@ class ResearchPaperRepository:
         pdf = FPDF()
         pdf.add_page()
         pdf.set_font("Arial", size=12)
-        pdf.cell(200, 10, txt="Sample Research Paper", ln=1, align='C')
-        pdf.cell(200, 10, txt="By: John Smith, Jane Doe", ln=2, align='C')
-        pdf.multi_cell(0, 10, txt="This is a sample research paper about deep learning and natural language processing. It demonstrates how to store research papers in a repository system.")
+        pdf.cell(200, 10, txt="Quantam Mechanishm", ln=1, align='C')
+        pdf.cell(200, 10, txt="By: John Wings", ln=2, align='C')
+        pdf.multi_cell(0, 10, txt="This is a sample research paper about Quantam Mechanish. It demonstrates how to store research papers in a repository system.")
         pdf.output(filename)
         return filename
 
