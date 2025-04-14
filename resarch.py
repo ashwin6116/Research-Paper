@@ -4,6 +4,7 @@ from datetime import datetime
 import hashlib
 from fpdf import FPDF  # For creating sample PDFs
 
+#creating class
 class ResearchPaperRepository:
     def __init__(self, db_name='research_papers.db'):
         self.db_name = db_name
@@ -262,6 +263,7 @@ def main():
     finally:
         repo.close()
 
+#this is main
 if __name__ == "__main__":
     # Check if fpdf is available
     try:
