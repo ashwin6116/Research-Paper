@@ -151,7 +151,7 @@ class ResearchPaperRepository:
             for byte_block in iter(lambda: f.read(4096), b""):
                 sha256_hash.update(byte_block)
         return sha256_hash.hexdigest()
-
+# This func defines searching for research paper
     def search_papers(self, query=None, category=None, author=None, year=None):
         """
         Search for papers using full-text search
@@ -209,7 +209,7 @@ class ResearchPaperRepository:
         columns = [col[0] for col in self.cursor.description]
         results = [dict(zip(columns, row)) for row in self.cursor.fetchall()]
         return results
-
+# this function is used to categrories research_paper
     def get_all_categories(self):
         """Get all distinct categories in the repository"""
         self.cursor.execute('SELECT DISTINCT category FROM papers WHERE category IS NOT NULL')
