@@ -11,7 +11,7 @@ class ResearchPaperRepository:
         self.conn = None
         self.cursor = None
         self._initialize_database()
-
+#This func is to initialize database
     def _initialize_database(self):
         """Initialize the database with required tables"""
         self.conn = sqlite3.connect(self.db_name)
